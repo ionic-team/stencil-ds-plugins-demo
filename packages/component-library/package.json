@@ -1,0 +1,29 @@
+{
+  "name": "component-library",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "unpkg": "dist/ionic.js",
+  "private": true,
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/angular-output-target": "0.0.1",
+    "@stencil/react-output-target": "0.0.1",
+    "@stencil/core": "^1.1.0",
+    "@stencil/sass": "^0.2.1",
+    "@types/node": "^11.11.8"
+  },
+  "license": "MIT"
+}
