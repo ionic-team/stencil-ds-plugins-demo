@@ -21,14 +21,12 @@
     "dist/"
   ],
   "devDependencies": {
-    "@ionic-enterprise/react-component-lib": "0.0.1",
     "@types/jest": "23.3.9",
     "@types/node": "10.12.9",
     "@types/react": "16.7.6",
     "@types/react-dom": "16.0.9",
     "jest": "^23.0.0",
     "jest-dom": "^3.0.2",
-    "np": "^3.1.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "rollup": "^1.21.2",
@@ -36,7 +34,6 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@ionic-enterprise/react-output-plugin": "0.0.8",
     "component-library": "^0.0.1"
   },
   "peerDependencies": {
