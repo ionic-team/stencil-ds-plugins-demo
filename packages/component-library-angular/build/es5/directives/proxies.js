@@ -79,7 +79,7 @@ var DemoComponent = /** @class */ (function () {
         proxyOutputs(this, this.el, ['slideChanged']);
     }
     DemoComponent.decorators = [
-        { type: Component, args: [{ selector: 'demo-component', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'value'] },] },
+        { type: Component, args: [{ selector: 'demo-component', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['advanced', 'max', 'min', 'value'] },] },
     ];
     /** @nocollapse */
     DemoComponent.ctorParameters = function () { return [
@@ -98,4 +98,4 @@ if (false) {
      */
     DemoComponent.prototype.el;
 }
-proxyInputs(DemoComponent, ['max', 'min', 'value']);
+proxyInputs(DemoComponent, ['advanced', 'max', 'min', 'value']);

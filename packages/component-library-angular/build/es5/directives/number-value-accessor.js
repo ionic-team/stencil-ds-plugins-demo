@@ -33,7 +33,7 @@ var NumericValueAccessor = /** @class */ (function (_super) {
                     /* tslint:disable-next-line:directive-selector */
                     selector: 'demo-component',
                     host: {
-                        '(change)': 'handleChangeEvent($event.target.value)'
+                        '(slideChanged)': 'handleChangeEvent($event.target.value)'
                     },
                     providers: [
                         {
