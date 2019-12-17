@@ -54,7 +54,7 @@ var DemoComponent = /** @class */ (function () {
         proxyOutputs(this, this.el, ['slideChanged']);
     }
     DemoComponent.decorators = [
-        { type: Component, args: [{ selector: 'demo-component', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['max', 'min', 'value'] },] },
+        { type: Component, args: [{ selector: 'demo-component', changeDetection: 0, template: '<ng-content></ng-content>', inputs: ['advanced', 'max', 'min', 'value'] },] },
     ];
     /** @nocollapse */
     DemoComponent.ctorParameters = function () { return [
@@ -63,7 +63,7 @@ var DemoComponent = /** @class */ (function () {
     ]; };
     return DemoComponent;
 }());
-proxyInputs(DemoComponent, ['max', 'min', 'value']);
+proxyInputs(DemoComponent, ['advanced', 'max', 'min', 'value']);
 
 /**
  * @fileoverview added by tsickle
@@ -174,7 +174,7 @@ var NumericValueAccessor = /** @class */ (function (_super) {
                     /* tslint:disable-next-line:directive-selector */
                     selector: 'demo-component',
                     host: {
-                        '(change)': 'handleChangeEvent($event.target.value)'
+                        '(slideChanged)': 'handleChangeEvent($event.target.value)'
                     },
                     providers: [
                         {

@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <demo-component min="0" max="1000" [(ngModel)]="selectValue"></demo-component>
+  <demo-component min="0" max="1000" [(ngModel)]="selectValue" (slideChanged)="logVal($event)"></demo-component>
 
 
   <p>Value: {{ selectValue }}</p>

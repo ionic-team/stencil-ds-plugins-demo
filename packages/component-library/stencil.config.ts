@@ -6,7 +6,7 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 const angularValueAccessorBindings: ValueAccessorConfig[] = [
   {
     elementSelectors: ['demo-component'],
-    event: 'change',
+    event: 'slideChanged',
     targetAttr: 'value',
     type: 'number'
   }
@@ -26,7 +26,8 @@ export const config: Config = {
       proxiesFile: '../component-library-react/src/components.ts'
     }),
     {
-      type: 'dist'
+      type: 'dist',
+      esmLoaderPath: '../loader'
     },
     { type: 'experimental-dist-module', dir: 'dist/module' },
     { type: 'docs-readme' },
